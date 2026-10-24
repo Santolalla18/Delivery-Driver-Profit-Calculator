@@ -20,7 +20,7 @@ def calc_dds(gross_per_hour, miles_per_hour, mpg, tank_cost, waiting_time, tank_
     pre_tax_net_hr = gross_per_hour - gas_cost_hr - depreciation_hr
 
     if se_tax:
-        net_hr = pre_tax_net_hr * (1-TAX_RATE) # this is the self-employed tax rate lol
+        net_hr = pre_tax_net_hr * (1-TAX_RATE) # this is the self-employed tax rate 
     else:
         net_hr = pre_tax_net_hr
     return { "net_hr": round(net_hr, 2), "cost_per_mile": round(cost_per_mile, 2), 
